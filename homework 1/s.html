@@ -29,7 +29,7 @@ function randoColor(){
 	return c;
 }
 window.onLoad= function() {
-	var div= document.getElementByClassName('btns').item(0);
+	var div= document.getElementsByClassName('btns').item(0);
 	div.style.backgroundColor=randoColor();
 	div.style.color=randoColor();
 	div.style.left=rnd(13,46)+'%';
