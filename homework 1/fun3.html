@@ -1,0 +1,58 @@
+<html>
+<head>
+<style type="text/css">
+body{
+
+}
+.btns{
+	width:90px;
+	height:40px;
+	background-color: darkmagenta;
+	color: white;
+	position: absolute;
+	left:45%;
+	top:45%;
+	font-size:18px;
+	text-align: center;
+	line-height:40px;
+	-webkit-transition: all 500ms;
+}
+</style>
+<script type="text/javascript">
+
+
+</script>
+<title>fun2</title>
+</head>
+<body>
+<script type="text/javascript">
+	for (var i = 0; i < 100; i++) {
+	document.write('<div class="btns">Click Me For 60000$ </div>');
+}
+		function rnd(a,b){
+		return Math.round(Math.random()*95);
+		}
+	function rndc(){
+	var c='#';
+	for(var i=0;i<6;i++){
+	c+=rnd(0,15).toString(16);
+	}
+	window.onload= function (){
+	var btns= document.getElementsbyClassName('btns');
+			btns.style.left=rnd(90)+'%';
+			btns.style.top=rnd(90)+'%';
+			btns.style.backgroundColor = rndc();
+			btns.onmouseover=function(){
+				btns.style.left=rnd(90)+'%';
+				btns.style.top=rnd(90)+'%';
+				btns.style.backgroundColor = rndc();
+				body.style.backgroundColor = rndc();
+				
+			}
+		}
+	}
+</script>
+
+</body>
+
+</html>

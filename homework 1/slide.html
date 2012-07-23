@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+div.container{
+	width:980px;
+	margin:0 auto;
+	padding-top:1px;
+}
+.pic1{
+	background-image: url(images/pic1.jpg);
+	width:1024px;
+	height:768px;
+}
+.pic2{
+	background-image: url(images/pic2.jpg);
+	width:1024px;
+	height:768px;
+}
+.pic3{
+	background-image: url(images/pic3.jpg);
+	width:1024px;
+	height:768px;
+}
+.pic4{
+	background-image: url(images/pic4.jpg);
+	width:1024px;
+	height:768px;
+}
+.pic5{
+	background-image: url(images/pic5.jpg);
+	width:1024px;
+	height:768px;
+}
+.train{
+	width:1024px;
+	height:768px;
+	overflow:hidden;
+	margin-top:20px;
+	position:relative;
+	margin-left: 250px;
+}
+ul{
+	width:150px;
+	height:3px;
+	margin-left: 250px;
+}
+li.but{
+	background-color: rgb(0,130,255);
+	list-style-type: none;
+	width:30px;
+	height:3px;
+	margin-left: 250px;
+}
+button{
+	margin-left: 250px;
+}
+</style>
+<script type="text/javascript">
+window.onload=function{
+
+}
+nextSlide = function (){
+		go2slide(currentSlide+1)
+};
+prvSlide = function (){
+		go2slide(currentSlide-1)
+};
+
+
+
+</script>
+<title>basic slide show</title>
+</head>
+
+<body>
+<div class="container"></div>
+	<div class="slide">
+		<div class="train">
+			<div class="pic1"></div>
+			<div class="pic2"></div>
+			<div class="pic3"></div>
+			<div class="pic4"></div>
+			<div class="pic5"></div>
+			<div class="clear"></div>
+		</div>
+		<div class="click">
+			<ul>
+				<li class="but"></li>
+				<li class="but"></li>
+				<li class="but"></li>
+				<li class="but"></li>
+				<li class="but"></li>
+			</ul>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<button onclick="prvSlide" value="prv" ></button>
+	<button onclick="nextSlide" value="next" ></button>
+	<div class="clear"></div>
+	</div>
+</body>
+
+</html>

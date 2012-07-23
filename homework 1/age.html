@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>please enter your age </p>
+age:<input id="age" value="13" />
+<p>click to check if you are allowed to drink our speciality</p>
+<button onclick="myFunction()">check </button>
+
+
+<p id="demo"></p>
+
+<script type="text/javascript">
+function myFunction(){
+	var age,drinkable;
+	age=document.getElementById('age').value;
+	drinkable=(age<13)?"nope sorry" : "yeah dude. how many barrels?";
+	document.getElementById('demo').innerHTML=drinkable;
+}
+</script>
+
+</body>
+</html>
+

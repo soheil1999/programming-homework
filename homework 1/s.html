@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>click it</title>
+<style type="text/css">
+.btns{
+	position: absolute;
+	left: 40%;
+	top: 45%;
+	padding:12px 16px;
+	font-family:"Comic Sans MS", cursive;
+	cursor:pointer;
+	white-space:nowrap;
+	-webkit-transition:all 400ms;
+}
+</style>
+<script type="text/javascript">
+	var cheat = 0;
+function rnd(a,b){
+	return Math.floor( Math.random()*(b-a+1) ) +a;
+}
+
+var font = new Array ;
+function randoColor(){
+	var c = '#';
+	for(var i=0; i<6; i++){
+		c+=rnd(0.15).toString(16)
+	}
+	return c;
+}
+window.onLoad= function() {
+	var div= document.getElementByClassName('btns').item(0);
+	div.style.backgroundColor=randoColor();
+	div.style.color=randoColor();
+	div.style.left=rnd(13,46)+'%';
+	div.style.top=rnd(17,106)+'%';
+	div.onmousemove=function(){
+		div.style.left=rnd(13,46)+'%';
+		div.style.top=rnd(17,106)+'%';
+		div.style.backgroundColor=randoColor();
+		div.style.color=randoColor();
+	}
+}
+</script>
+</head>
+<body>
+	<div class="btns">CLICK ME FOR 6000$</div>
+
+
+</body>
+</html>
