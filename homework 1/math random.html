@@ -1,43 +1,48 @@
 <!DOCTYPE html>
 <html>
 <head>
-
 <script type="text/javascript">
-for (var i = 0; i < 50; i++) {
-	document.write('<div class='butt'>click me </div>');
-}
-function  rnd(a,b) {
-	return Math.floor(Math.random()*(b-a+1))+1;
-}
-function rndc(){
-	var c='#';
-	for(var i=0;i<6;i++){
-	c+=rnd(0,15).toString(16);
+	function  rnd(a,b) {
+		return Math.floor(Math.random()*(b-a+1))+1;
 	}
-}
-var butt = document.getElementsByClassName('butt');
-(rands = function (){
-for (var stl=0;stl<divs.length;stl++){
-	butt.item(stl).style.position = 'absolute';
-	butt.item(stl).style.width = rnd(5,25) + 'px';
-	butt.item(stl).style.height = rnd(5,25) + 'px';
-	butt.item(stl).style.left = rnd(5,95) + '%';
-	butt.item(stl).style.top = rnd(5,95) + '%';
-}
+	function rndc(){
+		var c='#';
+		for(var i=0;i<6;i++){
+			c+=rnd(0,15).toString(16);
+		}
+		return c;
+	}
+
+	window.onload=function(){
+		var butt = document.getElementsByClassName('butt');
+		for (var stl=0;stl<butt.length;stl++){
+			butt.item(stl).onmouseover=function(){
+				this.style.width = rnd(50,125) + 'px';
+				this.style.height = rnd(50,125) + 'px';
+				this.style.left = rnd(5,95) + '%';
+				this.style.top = rnd(5,95) + '%';
+			}
+			
+		}
+	}
+	
 </script>
+
 <style type="text/css">
 div.butt{
 	background-color: darkmagenta;
+	position: absolute;
 }
-
-	
-
 </style>
 
-		<body>
-			<div class="container">
-				
-			</div>
-		</body>
-	</head>
+</head>
+<body>
+	<div class="container">
+		<script type="text/javascript">
+			for (var i = 0; i < 50; i++) {
+				document.write("<div class='butt'>click me </div>");
+			}
+		</script>
+	</div>
+</body>
 </html>
