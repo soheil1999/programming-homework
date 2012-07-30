@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="banner.css">
-	<link type="text/javascript" href="banner.js">
+	<script type="text/javascript" src="slideshow.js" ></script>
 </head>
 <body>
 <div class="container">
@@ -16,15 +16,13 @@
 			<div style="background-image:url('images/pic4.jpg');"></div>
 			<div style="background-image:url('images/pic5.jpg');"></div>
 		</div>
-		<div class="btns">
-				<ul>
-					<li class="active"></li>
-					<li onclick="document.getElementsByClassName('train').style.left='0';"></li>
-					<li onclick="document.getElementsByClassName('train').style.left='-450px';"></li>
-					<li onclick="document.getElementsByClassName('train').style.left='-900px';"></li>
-					<li onclick="document.getElementsByClassName('train').style.left='-1350px';"></li>
-				</ul>
-			</div>	
+		<ul class="btns">
+			<li class="active"></li>
+			<li onclick="document.getElementsByClassName('train').style.left='0';"></li>
+			<li onclick="document.getElementsByClassName('train').style.left='-450px';"></li>
+			<li onclick="document.getElementsByClassName('train').style.left='-900px';"></li>
+			<li onclick="document.getElementsByClassName('train').style.left='-1350px';"></li>
+		</ul>
 	</div>
 </div>
 	
