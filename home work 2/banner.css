@@ -1,4 +1,4 @@
-
+﻿
 div.container{
 	width       : 980px;
 	margin      : 0 auto;
@@ -11,7 +11,7 @@ div.slide{
 	margin     : 30px auto 0;
 	overflow   : hidden;
 	position   : relative;
-	background-image    : url('../images/loading.gif');
+	background-image    : url('images/loading.gif');
 	background-repeat   : no-repeat;
 	background-position : center center;
 }
