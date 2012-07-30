@@ -5,7 +5,7 @@ body{
 
 }
 .btns{
-	width:9px;
+	width:90px;
 	height:40px;
 	background-color: darkmagenta;
 	color: white;
@@ -16,7 +16,6 @@ body{
 	text-align: center;
 	line-height:40px;
 	-webkit-transition: all 500ms;
-	cursor: pointer;
 }
 </style>
 <script type="text/javascript">
@@ -27,7 +26,7 @@ body{
 </head>
 <body>
 <script type="text/javascript">
-	for (var j = 0; j < 100; i++) {
+	for (var i = 0; i < 100; i++) {
 	document.write('<div class="btns">Click Me </div>');
 }
 		function rnd(){
@@ -36,7 +35,7 @@ body{
 	function rndc(){
 	var c='#';
 	for(var i=0;i<6;i++){
-	c+=rnd(20,15).toString(16);
+	c+=rnd(0,15).toString(16);
 	}
 }
 	window.onload= function (){
