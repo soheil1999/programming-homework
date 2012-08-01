@@ -35,8 +35,8 @@ div.slide ul.btns{
 	border-radius:50%;
 	list-style-type: none;
 	position: absolute;
-	left:0;
-	bottom:0;
+	left:300px;
+	bottom:15px;
 }
 div.slide ul.btns li{
 	float: left;
@@ -44,16 +44,16 @@ div.slide ul.btns li{
 	width:15px;
 	height:15px;
 	cursor: pointer;
-	-webkit-transition : all 1100ms;
-	background-color: blue;
+	-webkit-transition : all 500ms;
+	background-color: lightseagreen;
 	border-radius:50%;
 }
 div.slide ul.btns li:hover,
 div.slide ul.btns li.active{
 	height           : 16px;
-	margin-top       : -3px;
-	background-color : #2677AD;
-	-webkit-transition-duration : 200ms;
+	margin-top       : -6px;
+	background-color : darkgreen;
+	-webkit-transition-duration : 500ms;
 }
 
 div.slide div.previous,
