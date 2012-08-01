@@ -27,3 +27,5 @@ window.onload =function(){
 	}
 		setInterval(nextSlide,500);
 }
+
+}
