@@ -1,6 +1,7 @@
-window.onload = function(){
+window.onload =function(){
 	var slide = document.getElementsByClassName('slide').item(0);
 	var lists = slide.getElementsByClassName('btns').item(0).getElementsByTagName('li');
+	alert(selam);
 
 	var currentSlide = 0
 	gotoslide = function(n){
@@ -13,7 +14,7 @@ window.onload = function(){
 	nextSlide = function(){
 		go2slide(currentSlide+1);
 
-	gotoslide = function(n){
+	gotoslide=function(n){
 		train.style.left=(-450*n) + 'px';
 	}
 	for (var i = 0; i < lists.length; i++) {
