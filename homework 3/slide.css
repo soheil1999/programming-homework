@@ -41,8 +41,8 @@ div.slide ul.btns{
 div.slide ul.btns li{
 	float: left;
 	margin-right: 5px;
-	width:30px;
-	height:30px;
+	width:15px;
+	height:15px;
 	cursor: pointer;
 	-webkit-transition : all 1100ms;
 	background-color: blue;
@@ -64,7 +64,7 @@ div.slide div.next{
 	height   : 30px;
 	opacity  : 0;
 	cursor   : pointer;
-	background-image   : url('../images/arrow.png');
+	background-image   : url('images/arrow.png');
 	background-repeat  : no-repeat;
 	-webkit-transition : opacity 500ms;
 }
