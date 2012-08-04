@@ -1,4 +1,18 @@
+function randColor(){
+	var c='#';
+	for(var i=0;i<6;i++){
+		c+=rnd(0,15).toString(16);
+	}
+	return c;
+}
 window.onload=function(){
+	function randColor(){
+		var c='#';
+		for(var i=0;i<6;i++){
+				c+=rnd(0,15).toString(16);
+			}
+		return c;
+		}
 	var slide= document.getElementsByClassName('slide').item(0);
 	var btns = slide.getElementsByClassName('btns').item(0).getElementsByTagName('li');
 	var train = slide.getElementsByClassName('train').item(0);
@@ -11,12 +25,15 @@ window.onload=function(){
 		btns.item(currentSlide).className = ''
 		btns.item(n).className = 'active';
 		currentSlide=n;
+
 	})(0)
 	nextSlide=function(){
 		goToSlide(currentSlide+1)
+		document.body.style.backgroundColor = randColor();
 	}
 	prvSlide=function(){
 		goToSlide(currentSlide-1)
+		document.body.style.backgroundColor = randColor();
 	}
 	var autoPlayIv = false;
 	(autoPlayStart = slide.onmouseout = function(){
