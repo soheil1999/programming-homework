@@ -1,12 +1,14 @@
 body{
-	background-color:pink;
+	background-color:black;
 }
 div.container{
 	width       : 980px;
 	margin      : auto;
 	margin-top: 100px;
 	padding-top : 1px;
-	background-color: red;
+	background-color: black;
+	border: 1px solid grey;
+	border-radius:5px;
 }
 div.slide{
 	width:450px;
