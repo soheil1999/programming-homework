@@ -1,0 +1,45 @@
+.container {
+  width: 950px;
+  margin: 0 auto;
+  background-color:black;
+  border:2px solid grey;
+  border-radius:20px;
+}
+.left{
+ float:left; 
+}
+
+.right{
+ float:right;
+  }
+
+.clear{
+	clear:both;
+	width:0 !important;
+	height:0 !important;
+	min-height:0 !important;
+	min-width:0 !important;
+	overflow:hidden;
+}
+body{
+	background-color:black;
+	color:white;
+}
+div.accslide{
+	width:600px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+div.accslide div.train {
+	width:2000px;
+}
+div.accslide div.train > div{
+	cursor  : pointer;
+	float   : left;
+	width   : 100px;
+	overflow: hidden;
+
+}
+div.accslide div.train > div > img{
+	display:block;
+}
