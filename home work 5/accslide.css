@@ -26,17 +26,17 @@ body{
 	color:white;
 }
 div.accslide{
-	width:600px;
+	width:700px;
 	margin: 0 auto;
 	overflow: hidden;
 }
 div.accslide div.train {
-	width:2000px;
+	width:900px;
 }
 div.accslide div.train > div{
 	cursor  : pointer;
 	float   : left;
-	width   : 100px;
+	width   : 116px;
 	overflow: hidden;
 
 }

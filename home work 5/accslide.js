@@ -6,11 +6,11 @@ $(function(){
 			'width':'50px'
 		},500);
 		$(this).stop().animate({
-			'width': '300px'
+			'width': '450pxs'
 		},500);
 		('.accslides').mouseout(function(){
 		slide.stop().animate({
-			'width':'150px'
+			'width':'116px'
 		},500);
 	});
-});
+})
