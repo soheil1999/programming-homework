@@ -4,4 +4,24 @@
 }
 .container{
 	width: 980px;
+	background-color: black;
+	height: 1000px
+}
+nav.menu{
+	list-style-type: none;
+}
+nav.menu .btns{
+	float: left;
+	background-color: white;
+	width:150px;
+	height: 100px;
+	border-radius:10px;
+	border: 1px solid gray;
+	position: relative;
+	top: -70px;
+	left: 100px
+
+}
+nav.menu span{
+	margin-top: 10px;
 }
