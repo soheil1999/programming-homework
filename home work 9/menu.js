@@ -16,8 +16,25 @@ $(function(){
 			$(this).animate({
 				top:-75,
 				background:'white'
+			},500)	
+		});		
+		menu.click(function(){
+			$(this).animate({
+				top:500,
+				//"-webkit-transform":"rotate("280")"+'deg'
+				width:500
+
 			},500)
-		});				
+		});	
+		/*menu.dblclick(function(){
+			$(this).animate({
+				top:-75,
+				//"-webkit-transform":"rotate("280")"+'deg'
+				width:150
+
+			},500)
+		});
+		*/				
 	});
 
 });

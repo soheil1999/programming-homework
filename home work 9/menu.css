@@ -19,9 +19,10 @@ nav.menu .btns{
 	border: 1px solid gray;
 	position: relative;
 	top: -25px;
-	left: 100px
+	left: 100px;
+	cursor: pointer;
 
 }
-nav.menu span{
-	margin-top: 10px;
+nav.menu menu.btns span{
+	text-align: center;
 }
