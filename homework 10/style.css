@@ -1,0 +1,991 @@
+/*
+Theme Name: Themus Alanni!
+Theme URI: http://Soheildesign.ir/
+Description: The basic wp theme for my CIW programming class
+Author: soheilius the great
+Author URI: soheildesign.ir
+Version: 0.5 beta
+Tags: two-columns, fixed-width, custom-header, custom-background, rtl-language-support, jafang
+
+License: Grape co. License Number 892, California
+License URI:soheildesign.ir/licenses/Talan
+
+General comments (optional).
+*/
+*{
+	/*outline: 1px dashed red;*/
+}
+
+/************************************************ common ******************************************************/
+.clear{
+	clear:both;
+	width:0 !important;
+	height:0 !important;
+	min-height:0 !important;
+	min-width:0 !important;
+	overflow:hidden;
+}
+
+
+.main-container{
+	margin: 0 auto;
+	direction: rtl;
+	font-family: Tahoma;
+	font-size: 12px;
+}
+/************************************************ header of all pages ******************************************************/
+.header-container{
+	margin: 0 auto;
+	direction: inherit;
+	min-height: 160px;
+	background-image: url('images/bg.jpg');
+	background-repeat: repeat-x;
+}
+
+.header{
+	width: 950px;
+	margin: 0 auto;
+	min-height: 110px;
+	padding-top: 50px;
+}
+
+.logo {
+	float: right;
+	margin-right: 70px;
+}
+
+.menu{
+	margin-right: 420px;
+	margin-top: 35px;
+}
+
+nav.menu ul{
+	list-style-type: none;
+}
+
+nav.menu li{
+	float: right;
+	margin: 0 18px;
+}
+
+nav.menu li span{
+	text-align: center;
+	display: block;
+	margin-bottom: 4px;
+}
+
+nav.menu li span.up-line{
+	font-family: inherit;
+	font-size: 14px;
+	font-weight: bold;
+	color: #ccc;
+}
+
+nav.menu li:hover span.up-line{
+	color: #5a0;
+}
+
+nav.menu li span.down-line{
+	font-family: inherit;
+	font-size: 13px;
+	font-weight: 300;
+	color: #555;
+}
+
+nav.menu li:hover span.down-line{
+	color: #aaa;
+}
+
+nav.menu li span.home-img{
+	margin: 0 auto;
+	width: 37px;
+	height: 31px;
+	background-image: url('images/home.png');
+	background-repeat: no-repeat;
+	background-position: top;
+}
+
+nav.menu li:hover span.home-img{
+	background-position: bottom;
+}
+
+nav.menu li span.news-img{
+	margin: 0 auto;
+	width: 37px;
+	height: 31px;
+	background-image: url('images/about.png');
+	background-repeat: no-repeat;
+	background-position: top;
+}
+
+nav.menu li:hover span.news-img{
+	background-position: bottom;
+}
+
+nav.menu li span.services-img{
+	margin: 0 auto;
+	width: 37px;
+	height: 31px;
+	background-image: url('images/services.png');
+	background-repeat: no-repeat;
+	background-position: top;
+}
+
+nav.menu li:hover span.services-img{
+	background-position: bottom;
+}
+
+nav.menu li span.products-img{
+	margin: 0 auto;
+	width: 37px;
+	height: 31px;
+	background-image: url('images/products.png');
+	background-repeat: no-repeat;
+	background-position: top;
+}
+
+nav.menu li:hover span.products-img{
+	background-position: bottom;
+}
+
+nav.menu li span.contacts-img{
+	margin: 0 auto;
+	width: 37px;
+	height: 31px;
+	background-image: url('images/contacts.png');
+	background-repeat: no-repeat;
+	background-position: top;
+}
+
+nav.menu li:hover span.contacts-img{
+	background-position: bottom;
+}
+
+nav.menu li a{
+	text-align: center;
+	text-decoration: inherit;
+}
+/************************************************ green line in all pages but index page ******************************************************/
+.green-line-container{
+	margin: 0 auto;
+	direction: inherit;
+	min-height: 20px;
+	background-image: url('images/back-green-line.png');
+	background-repeat: repeat-x;
+}
+
+.green-line{
+	width: 950px;
+	margin: 0 auto;
+	direction: inherit;
+	min-height: 20px;
+	background-image: url('images/green-line.jpg');
+	background-repeat: no-repeat;
+}
+/************************************************ slider in index page ******************************************************/
+.slider-container{
+	margin: 0 auto;
+	direction: ltr;
+	min-height: 274px;
+	background-image: url('images/back-green-line.png');
+	background-repeat: repeat;
+}
+
+div.slideshow{
+	width : 950px;
+	overflow : hidden;
+	margin : 0 auto;
+	position: relative;
+	z-index: 1;
+	direction: ltr;
+}
+
+div.slideshow .train{
+	width : 3900px;
+	position : relative;
+	-webkit-transition : left 916ms;
+	-ms-transition : all 916ms;
+	-o-transition : all 916ms;
+	-moz-transition : all 916ms;
+	direction: ltr;
+}
+
+div.slideshow .train > div{
+	float : left;
+	direction: ltr;
+	width:950px;
+}
+
+div.slideshow .train > div > img{
+  	display : block;
+  	width:950px;
+}
+
+div.slideshow ul.btns{
+	list-style-type : none;
+	position: absolute;
+	left: 450px;
+	top: 230px;
+}
+
+div.slideshow li{
+	width: 15px;
+	height: 15px;
+	background-color: #FEF;
+	border-radius: 50%;
+	float: right;
+	margin-right: 5px;
+	-webkit-transition : all 800ms;
+	-ms-transition : all 800ms;
+	-o-transition : all 800ms;
+	-moz-transition : all 800ms;
+}
+
+div.slideshow li:hover{
+	background-color:#111;
+	-webkit-transition : all 200ms;
+	-ms-transition : all 200ms;
+	-o-transition : all 200ms;
+	-moz-transition : all 200ms;
+}
+/************************************************ this place is common for all contents of all pages ******************************************************/
+.content-holder-container{
+	margin: 0 auto;
+	direction: inherit;
+}
+
+section.content-holder{
+	direction: inherit;
+	width: 950px;
+	margin: 0 auto;
+	padding-bottom: 50px;
+	padding-top: 30px;
+}
+/************************************************ contents of each page place here ******************************************************/
+section.content-holder article{
+	padding:0 5px;
+}
+/************************************************ header of all articles in all pages ******************************************************/
+section.content-holder article header{
+	direction: inherit;
+	border-top: 1px dashed #aaa;
+	padding: 10px 0;
+}
+
+section.content-holder article header div.header-image5{
+	float: right;
+	height: 56px;
+	width: 56px;
+	margin-left: 10px;
+	background-image: url('images/cyrcle5.png');
+	background-repeat: no-repeat;
+	background-position: top;
+	-webkit-transition: all 400ms;
+	-ms-transition: all 400ms;
+	-o-transition: all 400ms;
+	-moz-transition: all 400ms;
+}
+
+section.content-holder article:hover header div.header-image5{
+	background-position: bottom;
+	-webkit-transition: all 400ms;
+	-ms-transition: all 400ms;
+	-o-transition: all 400ms;
+	-moz-transition: all 400ms;
+}
+
+section.content-holder article header h2{
+	margin-left: 700px;
+	margin-right: 70px;
+	padding: 20px 0;
+	font-size: 13px;
+	color: #060;
+	font-weight: bold;
+	-webkit-transition: all 400ms;
+	-ms-transition: all 400ms;
+	-o-transition: all 400ms;
+	-moz-transition: all 400ms;
+}
+
+section.content-holder article:hover header h2{
+	color: #090;
+	-webkit-transition: all 400ms;
+	-ms-transition: all 400ms;
+	-o-transition: all 400ms;
+	-moz-transition: all 400ms;
+}
+/************************************************ body of all articles in all pages ******************************************************/
+section.content-holder article.article-body{
+	direction: inherit;
+	margin-right: 165px;
+	border-bottom: 1px dashed #aaa;
+	padding: 10px;
+	-webkit-transition: all 400ms;
+	-ms-transition: all 400ms;
+	-o-transition: all 400ms;
+	-moz-transition: all 400ms;
+}
+
+section.content-holder article:hover article.article-body{
+	background-color: #efe;
+	-webkit-transition: all 400ms;
+	-ms-transition: all 400ms;
+	-o-transition: all 400ms;
+	-moz-transition: all 400ms;
+}
+
+
+section.content-holder article div.article-image{
+	float: right;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+	filter: alpha(opacity=50);
+	-moz-opacity:0.5;
+	-khtml-opacity: 0.5;
+	opacity: 0.5;
+	width: 150px;
+	height: 150px;
+	-webkit-transition: all 400ms;
+	-ms-transition: all 400ms;
+	-o-transition: all 400ms;
+	-moz-transition: all 400ms;
+}
+
+section.content-holder article:hover div.article-image{
+	float: right;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	-moz-opacity: 1;
+	-khtml-opacity: 1;
+	opacity: 1;
+	width: 150px;
+	height: 150px;
+	-webkit-transition: all 400ms;
+	-ms-transition: all 400ms;
+	-o-transition: all 400ms;
+	-moz-transition: all 400ms;
+}
+
+section.content-holder article.article-body p{
+	direction: inherit;
+	line-height: 12pt;
+	padding-bottom: 5px;
+	color: #666;
+}
+
+section.content-holder article.article-body h3{
+	color: #060;
+	font-size: 11px;
+	font-weight: bold;
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+/************************************************ blog's layout (1, 2, 3, 4, in index page) ******************************************************/
+section.index-blog{
+	direction: inherit;
+	margin-bottom: 30px;
+}
+
+section.index-blog section {
+	direction: inherit;
+	float: right;
+	width: 215px;
+	margin:0 10px;
+}
+
+section.index-blog:last-child{
+	direction: inherit;
+	margin-right: 712px;
+	padding-left: 10px;
+}
+/************************************************ header of all boxes in blog layout (1, 2, 3, 4, in index page) ******************************************************/
+section.index-blog section header{
+	margin-bottom: 5px;
+}
+
+section.index-blog section header div.header-image1{
+	float: right;
+	width: 56px;
+	height: 56px;
+	background-image: url('images/cyrcle1.png');
+	background-repeat: no-repeat;
+	background-position: top;
+	-webkit-transition: all 400ms;
+	-ms-transition: all 400ms;
+	-o-transition: all 400ms;
+	-moz-transition: all 400ms;
+}
+
+section.index-blog section:hover header div.header-image1{
+	background-position: bottom;
+	-webkit-transition: all 400ms;
+	-ms-transition: all 400ms;
+	-o-transition: all 400ms;
+	-moz-transition: all 400ms;
+}
+
+section.index-blog section header div.header-image2{
+	float: right;
+	width: 56px;
+	height: 56px;
+	background-image: url('images/cyrcle2.png');
+	background-repeat: no-repeat;
+	background-position: top;
+	-webkit-transition: all 400ms;
+	-ms-transition: all 400ms;
+	-o-transition: all 400ms;
+	-moz-transition: all 400ms;
+}
+
+section.index-blog section:hover header div.header-image2{
+	background-position: bottom;
+	-webkit-transition: all 400ms;
+	-ms-transition: all 400ms;
+	-o-transition: all 400ms;
+	-moz-transition: all 400ms;
+}
+
+section.index-blog section header div.header-image3{
+	float: right;
+	width: 56px;
+	height: 56px;
+	background-image: url('images/cyrcle3.png');
+	background-repeat: no-repeat;
+	background-position: top;
+	-webkit-transition: all 400ms;
+	-ms-transition: all 400ms;
+	-o-transition: all 400ms;
+	-moz-transition: all 400ms;
+}
+
+section.index-blog section:hover header div.header-image3{
+	background-position: bottom;
+	-webkit-transition: all 400ms;
+	-ms-transition: all 400ms;
+	-o-transition: all 400ms;
+	-moz-transition: all 400ms;
+}
+
+section.index-blog section header div.header-image4{
+	float: right;
+	width: 56px;
+	height: 56px;
+	background-image: url('images/cyrcle4.png');
+	background-repeat: no-repeat;
+	background-position: top;
+	-webkit-transition: all 400ms;
+	-ms-transition: all 400ms;
+	-o-transition: all 400ms;
+	-moz-transition: all 400ms;
+}
+
+section.index-blog section:hover header div.header-image4{
+	background-position: bottom;
+	-webkit-transition: all 400ms;
+	-ms-transition: all 400ms;
+	-o-transition: all 400ms;
+	-moz-transition: all 400ms;
+}
+
+section.index-blog section header h2{
+	display: block;
+	direction: inherit;
+	color: #050;;
+	font-size: 15px;
+	font-weight: bold;
+	font-family: inherit;
+	padding: 18px 66px 25px 0px;
+	-webkit-transition: all 400ms;
+	-ms-transition: all 400ms;
+	-o-transition: all 400ms;
+	-moz-transition: all 400ms;
+}
+
+section.index-blog section:hover header h2{
+	color: #090;
+	-webkit-transition: all 400ms;
+	-ms-transition: all 400ms;
+	-o-transition: all 400ms;
+	-moz-transition: all 400ms;
+}
+/************************************************ body of boxes in blog layout (1, 2, 3, 4, in index page) ******************************************************/
+section.index-blog section article section{
+	-webkit-transition: all 400ms;
+	-ms-transition: all 400ms;
+	-o-transition: all 400ms;
+	-moz-transition: all 400ms;
+}
+
+section.index-blog section:hover article section{
+	padding:0 5px;
+	background-color: #efe;
+	-webkit-transition: all 400ms;
+	-ms-transition: all 400ms;
+	-o-transition: all 400ms;
+	-moz-transition: all 400ms;
+}
+
+section.index-blog section article section p{
+	direction: inherit;
+	line-height: 12pt;
+	color: #666;
+}
+/************************************************ products blog ***************************************/
+section.product-blog{
+	direction: inherit;
+	margin-bottom: 30px;
+}
+
+section.product-blog section {
+	direction: inherit;
+	float: right;
+	width: 215px;
+	margin:0 10px;
+}
+
+section.product-blog:last-child{
+	direction: inherit;
+	margin-right: 712px;
+	padding-left: 10px;
+}
+/************************************************ header of boxes in products blog layout  (in products page) ******************************************************/
+section.product-blog section header{
+	margin-bottom: 5px;
+}
+
+section.product-blog section header div.header-image1{
+	float: right;
+	width: 56px;
+	height: 56px;
+	background-image: url('images/cyrcle1.png');
+	background-repeat: no-repeat;
+	background-position: top;
+	-webkit-transition: all 400ms;
+	-ms-transition: all 400ms;
+	-o-transition: all 400ms;
+	-moz-transition: all 400ms;
+}
+
+section.product-blog section:hover header div.header-image1{
+	background-position: bottom;
+	-webkit-transition: all 400ms;
+	-ms-transition: all 400ms;
+	-o-transition: all 400ms;
+	-moz-transition: all 400ms;
+}
+
+section.product-blog section header div.header-image2{
+	float: right;
+	width: 56px;
+	height: 56px;
+	background-image: url('images/cyrcle2.png');
+	background-repeat: no-repeat;
+	background-position: top;
+	-webkit-transition: all 400ms;
+	-ms-transition: all 400ms;
+	-o-transition: all 400ms;
+	-moz-transition: all 400ms;
+}
+
+section.product-blog section:hover header div.header-image2{
+	background-position: bottom;
+	-webkit-transition: all 400ms;
+	-ms-transition: all 400ms;
+	-o-transition: all 400ms;
+	-moz-transition: all 400ms;
+}
+
+section.product-blog section header div.header-image3{
+	float: right;
+	width: 56px;
+	height: 56px;
+	background-image: url('images/cyrcle3.png');
+	background-repeat: no-repeat;
+	background-position: top;
+	-webkit-transition: all 400ms;
+	-ms-transition: all 400ms;
+	-o-transition: all 400ms;
+	-moz-transition: all 400ms;
+}
+
+section.product-blog section:hover header div.header-image3{
+	background-position: bottom;
+	-webkit-transition: all 400ms;
+	-ms-transition: all 400ms;
+	-o-transition: all 400ms;
+	-moz-transition: all 400ms;
+}
+
+section.product-blog section header div.header-image4{
+	float: right;
+	width: 56px;
+	height: 56px;
+	background-image: url('images/cyrcle4.png');
+	background-repeat: no-repeat;
+	background-position: top;
+	-webkit-transition: all 400ms;
+	-ms-transition: all 400ms;
+	-o-transition: all 400ms;
+	-moz-transition: all 400ms;
+}
+
+section.product-blog section:hover header div.header-image4{
+	background-position: bottom;
+	-webkit-transition: all 400ms;
+	-ms-transition: all 400ms;
+	-o-transition: all 400ms;
+	-moz-transition: all 400ms;
+}
+
+section.product-blog section header div.header-image-thalgo{
+	float: right;
+	width: 56px;
+	height: 56px;
+	background-image: url('images/cyrcle-thalgo.png');
+	background-repeat: no-repeat;
+	background-position: top;
+	-webkit-transition: all 400ms;
+	-ms-transition: all 400ms;
+	-o-transition: all 400ms;
+	-moz-transition: all 400ms;
+}
+
+section.product-blog section:hover header div.header-image-thalgo{
+	background-position: bottom;
+	-webkit-transition: all 400ms;
+	-ms-transition: all 400ms;
+	-o-transition: all 400ms;
+	-moz-transition: all 400ms;
+}
+
+section.product-blog section header h2{
+	display: block;
+	direction: inherit;
+	color: #050;;
+	font-size: 15px;
+	font-weight: bold;
+	font-family: inherit;
+	padding: 18px 66px 25px 0px;
+	-webkit-transition: all 400ms;
+	-ms-transition: all 400ms;
+	-o-transition: all 400ms;
+	-moz-transition: all 400ms;
+}
+
+section.product-blog section:hover header h2{
+	color: #090;
+	-webkit-transition: all 400ms;
+	-ms-transition: all 400ms;
+	-o-transition: all 400ms;
+	-moz-transition: all 400ms;
+}
+/************************************************ body of boxes in products blog layout (in product page) ******************************************************/
+section.product-blog section article section.prod1{
+	background-image: url('images/prod1.png');
+	background-repeat: no-repeat;
+	background-position: left;
+	-webkit-transition: all 400ms;
+	-ms-transition: all 400ms;
+	-o-transition: all 400ms;
+	-moz-transition: all 400ms;
+}
+
+section.product-blog section:hover article section.prod1{
+	background-image: url('images/prod1.png');
+	background-repeat: no-repeat;
+	background-position: right;
+	padding:0 5px 0 0;
+	-webkit-transition: all 400ms;
+	-ms-transition: all 400ms;
+	-o-transition: all 400ms;
+	-moz-transition: all 400ms;
+}
+
+section.product-blog section article section.prod2{
+	background-image: url('images/prod2.png');
+	background-repeat: no-repeat;
+	background-position: left;
+	-webkit-transition: all 400ms;
+	-ms-transition: all 400ms;
+	-o-transition: all 400ms;
+	-moz-transition: all 400ms;
+}
+
+section.product-blog section:hover article section.prod2{
+	background-image: url('images/prod2.png');
+	background-repeat: no-repeat;
+	background-position: right;
+	padding:0 5px 0 0;
+	-webkit-transition: all 400ms;
+	-ms-transition: all 400ms;
+	-o-transition: all 400ms;
+	-moz-transition: all 400ms;
+}
+
+section.product-blog section article section.prod3{
+	background-image: url('images/prod3.png');
+	background-repeat: no-repeat;
+	background-position: left;
+	-webkit-transition: all 400ms;
+	-ms-transition: all 400ms;
+	-o-transition: all 400ms;
+	-moz-transition: all 400ms;
+}
+
+section.product-blog section:hover article section.prod3{
+	background-image: url('images/prod3.png');
+	background-repeat: no-repeat;
+	background-position: right;
+	padding:0 5px 0 0;
+	-webkit-transition: all 400ms;
+	-ms-transition: all 400ms;
+	-o-transition: all 400ms;
+	-moz-transition: all 400ms;
+}
+
+section.product-blog section article section.prod4{
+	background-image: url('images/prod4.png');
+	background-repeat: no-repeat;
+	background-position: left;
+	-webkit-transition: all 400ms;
+	-ms-transition: all 400ms;
+	-o-transition: all 400ms;
+	-moz-transition: all 400ms;
+}
+
+section.product-blog section:hover article section.prod4{
+	background-image: url('images/prod4.png');
+	background-repeat: no-repeat;
+	background-position: right;
+	padding:0 5px 0 0;
+	-webkit-transition: all 400ms;
+	-ms-transition: all 400ms;
+	-o-transition: all 400ms;
+	-moz-transition: all 400ms;
+}
+
+section.product-blog section article section.prod5{
+	background-image: url('images/prod5.png');
+	background-repeat: no-repeat;
+	background-position: left;
+	-webkit-transition: all 400ms;
+	-ms-transition: all 400ms;
+	-o-transition: all 400ms;
+	-moz-transition: all 400ms;
+}
+
+section.product-blog section:hover article section.prod5{
+	background-image: url('images/prod5.png');
+	background-repeat: no-repeat;
+	background-position: right;
+	padding:0 5px 0 0;
+	-webkit-transition: all 400ms;
+	-ms-transition: all 400ms;
+	-o-transition: all 400ms;
+	-moz-transition: all 400ms;
+}
+
+section.product-blog section article section.prod6{
+	background-image: url('images/prod6.png');
+	background-repeat: no-repeat;
+	background-position: left;
+	-webkit-transition: all 400ms;
+	-ms-transition: all 400ms;
+	-o-transition: all 400ms;
+	-moz-transition: all 400ms;
+}
+
+section.product-blog section:hover article section.prod6{
+	background-image: url('images/prod6.png');
+	background-repeat: no-repeat;
+	background-position: right;
+	padding:0 5px 0 0;
+	-webkit-transition: all 400ms;
+	-ms-transition: all 400ms;
+	-o-transition: all 400ms;
+	-moz-transition: all 400ms;
+}
+
+section.product-blog section article section.prod7{
+	background-image: url('images/prod7.png');
+	background-repeat: no-repeat;
+	background-position: left;
+	-webkit-transition: all 400ms;
+	-ms-transition: all 400ms;
+	-o-transition: all 400ms;
+	-moz-transition: all 400ms;
+}
+
+section.product-blog section:hover article section.prod7{
+	background-image: url('images/prod7.png');
+	background-repeat: no-repeat;
+	background-position: right;
+	padding:0 5px 0 0;
+	-webkit-transition: all 400ms;
+	-ms-transition: all 400ms;
+	-o-transition: all 400ms;
+	-moz-transition: all 400ms;
+}
+
+section.product-blog section article section.prod8{
+	background-image: url('images/prod8.png');
+	background-repeat: no-repeat;
+	background-position: left;
+	-webkit-transition: all 400ms;
+	-ms-transition: all 400ms;
+	-o-transition: all 400ms;
+	-moz-transition: all 400ms;
+}
+
+section.product-blog section:hover article section.prod8{
+	background-image: url('images/prod8.png');
+	background-repeat: no-repeat;
+	background-position: right;
+	padding:0 5px 0 0;
+	-webkit-transition: all 400ms;
+	-ms-transition: all 400ms;
+	-o-transition: all 400ms;
+	-moz-transition: all 400ms;
+}
+
+section.product-blog section article section p{
+	direction: inherit;
+	line-height: 12pt;
+	color: #666;
+	opacity: 0;
+	-webkit-transition: all 400ms;
+	-ms-transition: all 400ms;
+	-o-transition: all 400ms;
+	-moz-transition: all 400ms;
+}
+
+section.product-blog section:hover article section p{
+	background-color: #efe;
+	opacity: 1;
+	-webkit-transition: all 400ms;
+	-ms-transition: all 400ms;
+	-o-transition: all 400ms;
+	-moz-transition: all 400ms;
+}
+/************************************************ read more botton in all pages ******************************************************/
+.read-more{
+	display: block;
+	background-color: #fff;
+}
+
+.read-more a{
+	display: block;
+	padding: 2px 6px 6px 6px;
+	float: left;
+	margin: 3px;
+	background-color: #eee;
+	text-decoration: none;
+	direction: inherit;
+	color: #060;
+	border-radius: 7%;
+	-webkit-transition: all 150ms;
+	-ms-transition: all 150ms;
+	-o-transition: all 150ms;
+	-moz-transition: all 150ms;
+}
+
+.read-more a:hover{
+	padding: 2px 8px 6px 8px;
+	background-color: #060;
+	color: #eee;
+	-webkit-transition: all 150ms;
+	-ms-transition: all 150ms;
+	-o-transition: all 150ms;
+	-moz-transition: all 150ms;
+}
+/************************************************ footer's layout in all pages ******************************************************/
+.footer-container{
+	margin: 0 auto;
+	direction: inherit;
+	min-height: 231px;
+	background-image: url(images/bg.jpg);
+	background-repeat: repeat;
+}
+
+footer.footer {
+	width: 950px;
+	margin: 0 auto;
+	direction: inherit;
+	padding-top: 1px;
+}
+
+footer.footer > div{    /*space between boxes and copyright panel*/
+	padding-bottom: 30px;
+} 
+
+footer div.box{
+	float: right;
+	width: 215px;
+	padding-left: 22px;
+}
+
+footer div.last-box{
+	margin-right: 712px;
+	padding-left: 22px;
+}
+
+footer div h1 {
+	color: #060;;
+	font-size: 16px;
+	font-weight: bold;
+	font-family: inherit;
+	padding: 45px 10px 20px 10px;
+}
+
+footer.footer ul{
+	list-style-type:none;
+}
+
+footer.footer ul li{
+	display: block;
+	border-top:1px dashed #444;
+	padding:7px 14px 9px 0px;
+	font-family: inherit;
+	font-size: 13px;
+	color: #aaa;
+}
+
+footer.footer ul li a{
+	font-family: inherit;
+	text-decoration: inherit;
+	font-size: inherit;
+	color: inherit;
+}
+
+footer.footer ul li a:hover{
+	color: #5a0;
+}
+
+footer.footer ul li a:active{
+	color: #5f0;
+}
+
+footer.footer ul li a:visited{
+	color: #555;
+}
+/************************************************ copy-right's layout in all pages ******************************************************/
+.copyright-container{
+	margin: 0 auto;
+	padding: 20px;
+	direction: inherit;
+	background-color: black;
+}
+
+div.copyright{
+	width: 950px;
+	margin: 0 auto;
+	min-height: 70px;
+	direction: inherit;
+}
+
+div.copyright p{
+	text-align: center;
+	color: #777;
+	font-family: inherit;
+	font-size: inherit;
+	line-height: 1.7;
+}
