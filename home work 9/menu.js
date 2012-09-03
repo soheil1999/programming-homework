@@ -9,20 +9,24 @@ $(function(){
 		menu.mouseover(function(){
 			$(this).animate({
 				top:-50,
-				background:'gray'
+				background:'gray',
+				color:'white'
 			},500)		
 		});
 		menu.mouseout(function(){
 			$(this).animate({
 				top:-75,
-				background:'white'
+				background:'white',
+				color: 'black'
+
 			},500)	
 		});		
 		menu.click(function(){
 			$(this).animate({
 				top:500,
 				//"-webkit-transform":"rotate("280")"+'deg'
-				width:500
+				width:1500,
+				height:1000
 
 			},500)
 		});	
